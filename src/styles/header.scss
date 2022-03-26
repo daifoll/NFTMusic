@@ -1,0 +1,68 @@
+.header{
+    width: 100%;
+    padding: 9px 0 18px 0;
+    background: $primalHeaderBGColor;
+    backdrop-filter: blur(5px); /* Размытие */
+    top: 0;
+    position: absolute;
+        ::after{
+            content: '';
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            position: absolute;
+            background: #fff;
+            width: 80%;
+            height: 2px;
+        }
+    &-container{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__column{
+        flex-basis: auto;
+    }
+    &-logo{
+        .logo-text{
+            &__item{
+                line-height: 24px;
+                font-size: $primalHeaderLogoFontSize;
+                .logo-text__top{
+                    @include primalFontSemibold;
+                }
+            }
+        }
+    }
+
+    &-nav{
+        flex-basis: 456px;
+        &__navigation{
+
+        }
+        .nav-header{
+            .nav-list{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                text-transform: uppercase;
+                    &__item{
+                        line-height: 19px;
+                    }
+            }
+        }
+    }
+
+    &-contacts{
+        flex-basis: 121px;
+        &__item{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .contacts-header{
+
+        }
+    }
+}

@@ -1,0 +1,56 @@
+// Подключение стилей
+@import 'var';
+@import 'mixins';
+@import 'grid';
+@import 'normalize.css';
+@import 'header';
+
+
+
+
+
+
+
+// Дополнительное обнуление стилей
+*,
+*::before,
+*::after,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:link {
+    color: inherit;
+}
+
+a:active {
+    color: inherit;
+}
+
+a:visited {
+    color: inherit;
+}
+
+ul {
+    list-style: none;
+}
+
+/* ========== ОБЩИЕ СТИЛИ ========== */
+body{
+    @include primalFontRegular;
+    font-size: $primalFontSize;
+    color: $primalColor;
+    background: black;
+}
+

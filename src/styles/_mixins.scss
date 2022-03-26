@@ -1,0 +1,25 @@
+/* ========== Шрифты ========== */
+
+/* Inter - Light */
+@mixin primalFontLight {
+    font-family: 'Inter', sans-serif;
+    font-weight: 300;
+}
+
+/* Inter - Regular */
+@mixin primalFontRegular {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+}
+
+/* Inter - Semibold */
+@mixin primalFontSemibold {
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+}
+
+/* Inter - Bold */
+@mixin primalFontBold {
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+}
