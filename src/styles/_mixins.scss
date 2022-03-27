@@ -1,5 +1,12 @@
 /* ========== Шрифты ========== */
 
+
+/* Inter - ExtraLight */
+@mixin primalFontExtraLight {
+    font-family: 'Inter', sans-serif;
+    font-weight: 200;
+}
+
 /* Inter - Light */
 @mixin primalFontLight {
     font-family: 'Inter', sans-serif;
