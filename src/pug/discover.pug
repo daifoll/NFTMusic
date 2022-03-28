@@ -8,27 +8,27 @@ section.discover
                     .discover-genre__header-wrapper
                         span.discover-genre__header Music Genre
                     .discover-genre__content.genre-content
-                        button.genre-content__item Rock
-                        button.genre-content__item Pop
-                        button.genre-content__item K-Pop
-                        button.genre-content__item Jazz
-                        button.genre-content__item Funk
+                        button.genre-content__item(data-g="rock") Rock
+                        button.genre-content__item(data-g="pop") Pop
+                        button.genre-content__item(data-g="k-pop") K-Pop
+                        button.genre-content__item(data-g="jazz") Jazz
+                        button.genre-content__item(data-g="funk") Funk
         .discover__column.discover-content
-            .discover-content__card.discover-card
+            .discover-content__card.discover-card.rock
                 img.discover-card__img(src=require("../images/discover/genre 1.png"), alt="Heart & Sol")
                 .discover-card__header.header-genre-card
                     span.header-genre-card__item Heart & Sol
                 .discover-card__buttons.buttons-genre-card
                     button.buttons-genre-card__play Play now
                     button.buttons-genre-card__buy BUY NFT
-            .discover-content__card.discover-card
+            .discover-content__card.discover-card.rock
                 img.discover-card__img(src=require("../images/discover/genre 2.png"), alt="Heart & Sol")
                 .discover-card__header.header-genre-card
                     span.header-genre-card__item Heart & Sol
                 .discover-card__buttons.buttons-genre-card
                     button.buttons-genre-card__play Play now
                     button.buttons-genre-card__buy BUY NFT
-            .discover-content__card.discover-card
+            .discover-content__card.discover-card.jazz
                 img.discover-card__img(src=require("../images/discover/genre 3.png"), alt="Heart & Sol")
                 .discover-card__header.header-genre-card
                     span.header-genre-card__item Heart & Sol
