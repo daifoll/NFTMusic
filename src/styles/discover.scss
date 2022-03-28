@@ -49,4 +49,15 @@
                     }
                 }   
         }
+
+       &-content{
+           margin-top: 89px;
+           display: grid;
+           grid-template-columns: repeat(3, minmax(100px, 403px));
+           justify-content: space-between;
+           grid-gap: 10px;
+            .discover-card{
+                border: 1px solid $discoverCardBorderColor;
+            }
+       } 
 }
