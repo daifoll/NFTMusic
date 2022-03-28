@@ -1,0 +1,52 @@
+.discover{
+    padding: 151px 0px 110px 0px;
+        &-container{
+            display: flex;
+            flex-direction: column;
+        }
+
+        &-header{
+            display: flex;
+            justify-content: space-between;
+                .discover-text{
+                    &__item{
+                        font-size: $discoverHeaderMainText;
+                    }
+                }
+                .discover-genre{
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: flex-end;
+                        &__wrapper{
+                            display: flex;
+                        }
+                        &__header-wrapper{
+                            display: flex;
+                            align-items: center;
+                        }
+                        &__header{
+                            font-size: $discoverHeaderGenreText;
+                            margin-right: 16px;
+                        }
+                }
+                .genre-content{
+                    display: flex;
+                    align-items: center;
+                    &__item{
+                        background: transparent;
+                        color: $primalColor;
+                        border: 1px solid $discoverButtonsBorderColor;
+                        padding: 10px 20px;
+                        border-radius: 50px;
+                        cursor: pointer;
+                        transition: color 0.2s;
+                        &:not(:last-child){
+                            margin-right: 16px;
+                        }
+                        &:hover{
+                            color: #8f32a8;
+                        }
+                    }
+                }   
+        }
+}
