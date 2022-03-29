@@ -10,6 +10,18 @@ function toFilterGenre(event){
     
     let filterGenre = event.target.dataset['g'];
     
+    if(filterGenre == 'all'){
+        filterCards.forEach(item => {
+            if(item.classList.contains('discover-hide')){
+                item.classList.remove('discover-hide')
+                item.hidden = false;
+            }
+        })
+
+        return false
+    }
+
+
     filterCards.forEach(item=>{
         if(!item.classList.contains(filterGenre)){
             item.classList.add('discover-hide')
@@ -21,4 +33,3 @@ function toFilterGenre(event){
     })
 }
 
-console.log(filterCards)
