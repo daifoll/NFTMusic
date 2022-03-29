@@ -56,9 +56,62 @@
            grid-template-columns: repeat(3, minmax(100px, 403px));
            justify-content: space-between;
            grid-gap: 10px;
+           transition: all 0.3s;
             .discover-card{
                 transition: all 0.3s;
                 border: 1px solid $discoverCardBorderColor;
+                padding-bottom: 33px;
+                    &__img{
+                        position: relative;
+                        top: -10%;
+                        right: -15%;
+                    }
+                    .header-genre-card{
+                        position: relative;
+                        right: -15%;
+                            &__item{
+                                line-height: 29px;
+                                @include primalFontSemibold;
+                                font-size: $discoverHeaderGenreCardText;
+                            }
+                    }
+                    .buttons-genre-card{
+                        position: relative;
+                        right: -15%;
+                            &__play{
+                                font-size: $discoverButtonsGenrePlay;
+                                @include primalFontLight;
+                                background: transparent;
+                                color: $primalColor;
+                                border: 1px solid $discoverCardButtonsBorderColor;
+                                padding: 11px 50px 11px 22px;
+                                border-radius: 55px;
+                                position: relative;
+                                cursor: pointer;
+                                    &::after{
+                                        content: '';
+                                        background: url('../images/discover/button-play.svg');
+                                        width: 22px;
+                                        height: 22px;
+                                        position: absolute;
+                                        top: 50%;
+                                        transform: translateY(-50%);
+                                        left: 68%;
+                                    }
+                            }
+
+                            &__buy{
+                                text-transform: uppercase;
+                                background: linear-gradient(99.74deg, #06DBAC 5.23%, #BD00FF 92.7%);
+                                border-radius: 55px;
+                                border: 0;
+                                padding: 8px 25px;
+                                font-size: $discoverButtonsGenreBuy;
+                                color: $primalColor;
+                                cursor: pointer;
+                                margin: 29px 0px 0px 17.4px;
+                            }
+                    }
             }
 
             .discover-hide{

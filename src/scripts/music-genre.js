@@ -13,14 +13,10 @@ function toFilterGenre(event){
     filterCards.forEach(item=>{
         if(!item.classList.contains(filterGenre)){
             item.classList.add('discover-hide')
-            setTimeout(()=>{
-                item.hidden = true;
-            }, 1000)
+            item.hidden = true;
         }else{
             item.classList.remove('discover-hide')
-            setTimeout(()=>{
-                item.hidden = false;
-            }, 1000)
+            item.hidden = false;
         }
     })
 }
