@@ -1,0 +1,85 @@
+.footer{
+    padding: 96px 0px 73px 0px;
+        &-container{
+            display: flex;
+            flex-direction: column;
+        }
+
+        &__column{
+            &:not(:first-child){
+                margin-top: 45px;
+            }
+        }
+
+        &-header{
+            &__text{
+                font-size: $footerHeaderMainText;
+                font-style: normal;
+                line-height: 56px;
+            }
+        }
+
+        &-contacts{
+            display: flex;
+            justify-content: space-between;
+            &__social{
+                
+            }
+            .social-footer{
+                display: flex;
+                    &__link{
+                        font-size: $footerSocialLinkText;
+                        line-height: 39px;
+                        padding: 0px 42px 0px 42px;
+                        
+                        &:not(:last-child){
+                            border-right: 1px solid $footerSocialBorderColor;
+                        }
+
+                        &:first-child{
+                            padding: 0px 42px 0px 0px;
+                        }
+
+                        &:last-child{
+                            padding: 0px 0px 0px 42px;
+                        }
+                    }
+            }
+            .top-button-footer{
+                &__btn{
+                    font-size: $footerTopButton;
+                    line-height: 39px;
+                    background: transparent;
+                    border: 0;
+                    color: $footerTopButtonTextColor;
+                    position: relative;
+                    cursor: pointer;
+                        &::after{
+                            content: '';
+                            background: url('../images/footer/top-button-arrow.svg') no-repeat center;
+                            width: 24px;
+                            height: 24px;
+                            position: absolute;
+                            top: 50%;
+                            transform: translateY(-50%);
+                            left: -15%;
+                        }
+                }
+            }
+        }
+
+
+        &-bottom{
+            display: flex;
+            justify-content: space-between;
+            .docs-footer{
+                font-size: $footerBottomDocsText;
+                line-height: 22px;
+            }
+
+            .copyright-footer{
+                font-size: $footerBottomCopyrightText;
+                line-height: 22px;
+            }
+        }
+}
