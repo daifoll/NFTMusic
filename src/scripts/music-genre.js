@@ -31,5 +31,6 @@ function toFilterGenre(event){
             item.hidden = false;
         }
     })
+
 }
 

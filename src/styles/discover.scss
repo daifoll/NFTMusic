@@ -57,6 +57,7 @@
            justify-content: space-between;
            grid-gap: 10px;
            transition: all 0.3s;
+           min-height: 429px;
             .discover-card{
                 transition: all 0.3s;
                 border: 1px solid $discoverCardBorderColor;
