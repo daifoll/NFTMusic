@@ -1,0 +1,118 @@
+.navigation {
+    position: fixed;
+    z-index: 99;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    align-items: center;
+    height: 100vh;
+    background-color: transparent;
+    color: $burgerMenuColor;
+    right: -200px;
+    width: 250px;
+    transition: right 0.2s ease;
+    display: none;
+
+    @media screen and (max-width: 991px){
+        display: flex;
+    }
+
+    @media screen and (max-width: 768px){
+        width: 245px;
+    }
+
+
+    .contacts-header__burger-item{
+        margin-top: 50px;
+        &:not(:first-child){
+            margin-left: 20px;
+        }
+    }
+
+    .nav-btn {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 50px;
+        height: 50px;
+        border: 0;
+        background: #000;
+        cursor: pointer;
+
+        @media screen and (max-width: 768px){
+            width: 45px;
+        }
+
+        &__item {
+            position: absolute;
+            right: 50%;
+            transform: translate(50%, 50%);
+            top: 50%;
+            width: 30px;
+            height: 2px;
+            background: #fff;
+
+            &::before {
+                content: '';
+                position: absolute;
+                top: 10px;
+                display: block;
+                width: 30px;
+                height: 2px;
+                background-color: white;
+                transition: all 0.3s;
+            }
+            &::after {
+                content: '';
+                position: absolute;
+                bottom: 10px;
+                display: block;
+                width: 30px;
+                height: 2px;
+                background-color: white;
+                transition: all 0.3s;
+            }
+            
+        }
+
+    }
+
+    &__list {
+        margin-top: 100px;
+        display: none;
+            &-active{
+                display: block;
+            }
+    }
+
+
+    .list-nav {
+        &__item {
+            font-size: 30px;
+            text-transform: uppercase;
+            cursor: pointer;
+                &:not(:first-child){
+                    margin-top: 20px;
+                }
+            
+        }
+    }
+    .nav-btn__active{
+        background-color: rgba(0, 0, 0, 0);
+        &:before{
+            top: 0;
+            transform: rotate(45deg);
+        }
+    
+        &:after{
+            bottom: 0;
+            transform: rotate(-45deg);
+        }
+    }
+
+    &-active {
+        display: flex;
+        right: 0;
+        background-color: rgba($burgerMenuBGColor, 0.8);
+    }
+}

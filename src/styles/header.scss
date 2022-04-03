@@ -37,8 +37,9 @@
 
     &-nav{
         flex-basis: 456px;
-        &__navigation{
-
+        
+        @media screen and (max-width: 991px){
+            display: none;
         }
         .nav-header{
             .nav-list{
@@ -55,10 +56,16 @@
 
     &-contacts{
         flex-basis: 121px;
+        @media screen and (max-width: 991px){
+            display: none;
+        }
         &__item{
             display: flex;
             justify-content: space-between;
             align-items: center;
-        }
+        }    
+        
     }
+
+    
 }
