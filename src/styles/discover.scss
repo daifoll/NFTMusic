@@ -8,6 +8,9 @@
         &-header{
             display: flex;
             justify-content: space-between;
+            @media screen and (max-width: 1460px) {
+                flex-direction: column;
+            }
                 .discover-text{
                     &__item{
                         font-size: $discoverHeaderMainText;
@@ -58,27 +61,76 @@
            grid-gap: 10px;
            transition: all 0.3s;
            min-height: 429px;
+                @media screen and (max-width: 1460px) {
+                    grid-template-columns: repeat(2, minmax(100px, 0.4fr));
+                    justify-content: center;
+                    grid-row-gap: 100px;
+                }
+
+                @media screen and (max-width: 1150px){
+                    grid-template-columns: 100%;
+                }
+
+                @media screen and (max-width: 992px){
+                    grid-template-columns: 70%;
+                }
             .discover-card{
                 transition: all 0.3s;
                 border: 1px solid $discoverCardBorderColor;
                 padding-bottom: 33px;
+                position: relative;
+                
+                    &__img-wrapper{
+                        width: 100%;
+                    }
                     &__img{
                         position: relative;
                         top: -10%;
                         right: -15%;
+                        object-fit: cover;
+                        @media screen and (max-width: 1150px){
+                            top: -15%;       
+                            left: 60%;
+                        }
+
+                        @media screen and (max-width: 992px){
+                           max-width: 30%;
+                           left: 80%;
+                        }
                     }
                     .header-genre-card{
                         position: relative;
                         right: -15%;
+                        
+                        @media screen and (max-width: 1150px){
+                            position: absolute;
+                            top: 20%;
+                            right: 0;
+                            left: 5%;
+                        }
                             &__item{
                                 line-height: 29px;
                                 @include primalFontSemibold;
                                 font-size: $discoverHeaderGenreCardText;
+
+                                    @media screen and (max-width: 1150px){
+                                        font-size: calc($discoverHeaderGenreCardText * 2)
+                                        
+                                    }
                             }
+                            
                     }
                     .buttons-genre-card{
                         position: relative;
-                        right: -15%;
+                        flex-wrap: wrap;
+                        @media screen and (max-width: 1150px){
+                            position: absolute;
+                            top: 30%;
+                            left: 5%;
+
+                           
+                            
+                        }
                             &__play{
                                 font-size: $discoverButtonsGenrePlay;
                                 @include primalFontLight;
@@ -89,6 +141,12 @@
                                 border-radius: 55px;
                                 position: relative;
                                 cursor: pointer;
+                                
+                                    @media screen and (max-width: 1150px){
+                                        font-size: calc($discoverButtonsGenrePlay * 2)
+                                        
+                                    }
+
                                     &::after{
                                         content: '';
                                         background: url('../images/discover/button-play.svg');
@@ -98,6 +156,12 @@
                                         top: 50%;
                                         transform: translateY(-50%);
                                         left: 68%;
+
+                                        @media screen and (max-width: 1150px){
+                                            left: 80%;
+                                            
+                                        }
+                                        
                                     }
                             }
 
@@ -111,6 +175,11 @@
                                 color: $primalColor;
                                 cursor: pointer;
                                 margin: 29px 0px 0px 17.4px;
+
+                                    @media screen and (max-width: 1150px){
+                                        font-size: calc($discoverButtonsGenreBuy * 2)
+                                        
+                                    }
                             }
                     }
             }
