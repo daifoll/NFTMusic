@@ -22,10 +22,18 @@
                     align-items: flex-end;
                         &__wrapper{
                             display: flex;
+                            @media screen and (max-width: 730px){
+                                flex-direction: column;
+                                
+                            }
                         }
                         &__header-wrapper{
                             display: flex;
                             align-items: center;
+                            @media screen and (max-width: 730px){
+                                margin-bottom: 20px;
+                                 
+                             }
                         }
                         &__header{
                             font-size: $discoverHeaderGenreText;
@@ -71,9 +79,6 @@
                     grid-template-columns: 100%;
                 }
 
-                @media screen and (max-width: 992px){
-                    grid-template-columns: 70%;
-                }
             .discover-card{
                 transition: all 0.3s;
                 border: 1px solid $discoverCardBorderColor;
@@ -95,8 +100,10 @@
 
                         @media screen and (max-width: 992px){
                            max-width: 30%;
-                           left: 80%;
+                           left: 65%;
                         }
+
+
                     }
                     .header-genre-card{
                         position: relative;
@@ -114,8 +121,11 @@
                                 font-size: $discoverHeaderGenreCardText;
 
                                     @media screen and (max-width: 1150px){
-                                        font-size: calc($discoverHeaderGenreCardText * 2)
-                                        
+                                        font-size: calc($discoverHeaderGenreCardText * 2) 
+                                    }
+
+                                    @media screen and (max-width: 885px){
+                                        font-size: calc($discoverHeaderGenreCardText * 1.3) 
                                     }
                             }
                             
@@ -127,8 +137,6 @@
                             position: absolute;
                             top: 30%;
                             left: 5%;
-
-                           
                             
                         }
                             &__play{
@@ -143,8 +151,11 @@
                                 cursor: pointer;
                                 
                                     @media screen and (max-width: 1150px){
-                                        font-size: calc($discoverButtonsGenrePlay * 2)
-                                        
+                                        font-size: calc($discoverButtonsGenrePlay * 2)       
+                                    }
+
+                                    @media screen and (max-width: 885px){
+                                        font-size: calc($discoverButtonsGenrePlay * 1.4)       
                                     }
 
                                     &::after{
@@ -178,7 +189,10 @@
 
                                     @media screen and (max-width: 1150px){
                                         font-size: calc($discoverButtonsGenreBuy * 2)
-                                        
+                                    }
+
+                                    @media screen and (max-width: 885px){
+                                        font-size: calc($discoverButtonsGenreBuy * 1.4)  
                                     }
                             }
                     }
