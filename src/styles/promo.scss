@@ -16,15 +16,10 @@
         &-container{
             display: flex;
             flex-direction: column;
-            @media screen and (max-width: 955px){
-                    
-                    
-
-            }
+            
         }
 
-        &__column{
-        }
+        
 
         &-header{
             .header-promo{
@@ -32,16 +27,21 @@
                     font-size: $promoHeaderMainText;
                     font-weight: 400;
                     line-height: 97px;
+                    @media screen and (max-width: 610px){
+                        font-size: calc($promoHeaderMainText/1.1);
+                        line-height: 70px;
+                     }
                 }
 
-                @media screen and (max-width: 955px){
-                    
-                }
 
                 &__text-sub{
                     font-size: $promoHeaderSubText;
                     font-weight: 400;
                     line-height: 77px;
+
+                    @media screen and (max-width: 610px){
+                        font-size: calc($promoHeaderSubText/1.5);
+                     }
                 }
 
             }

@@ -94,7 +94,6 @@
                             
                             @media screen and (max-width: 885px){
                                 left: 105%;
-                                
                             }
                         }
                 }
@@ -105,14 +104,27 @@
         &-bottom{
             display: flex;
             justify-content: space-between;
+            @media screen and (max-width: 768px){
+                flex-direction: column;
+            }
             .docs-footer{
                 font-size: $footerBottomDocsText;
                 line-height: 22px;
+                &>a:hover{
+                    text-decoration: underline;
+                }
+                @media screen and (max-width: 768px){
+                    display: flex;
+                    flex-direction: column;
+                }
             }
 
             .copyright-footer{
                 font-size: $footerBottomCopyrightText;
                 line-height: 22px;
+                @media screen and (max-width: 768px){
+                    margin-top: 20px;
+                }
             }
         }
 }
