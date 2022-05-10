@@ -89,12 +89,12 @@
            grid-template-columns: repeat(3, minmax(100px, 403px));
            justify-content: space-between;
            grid-gap: 10px;
+           grid-row-gap: 100px;
            transition: all 0.3s;
            min-height: 429px;
                 @media screen and (max-width: 1460px) {
                     grid-template-columns: repeat(2, minmax(100px, 0.4fr));
                     justify-content: center;
-                    grid-row-gap: 100px;
                 }
 
                 @media screen and (max-width: 1150px){
@@ -155,6 +155,8 @@
                             
                     }
                     .buttons-genre-card{
+                        margin-top: 40px;
+                        margin-left: 17px;
                         position: relative;
                         flex-wrap: wrap;
                         @media screen and (max-width: 1150px){

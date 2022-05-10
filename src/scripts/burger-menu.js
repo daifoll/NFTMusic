@@ -57,7 +57,6 @@ function navigationLoad(event){
             let liElement = navigationList.lastChild;
             liElement.append(aElement);
         }
-        console.log(navigationList.lastChild.children[0])
     }
 
 }

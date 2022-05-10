@@ -94,13 +94,17 @@ function generateCards(){
         cardButtons.classList.add('discover-card__buttons', 'buttons-genre-card');
 
         // Кнопки
-        let cardPlayBtn = document.createElement('button');
+        let cardPlayBtn = document.createElement('a');
         cardPlayBtn.classList.add('buttons-genre-card__play');
-        cardPlayBtn.innerText = 'Play now'
+        cardPlayBtn.innerText = 'Play now';
+        cardPlayBtn.href = 'https://app.airnfts.com/';
+        cardPlayBtn.target = '_blank';
         
-        let cardBuyBtn = document.createElement('button');
+        let cardBuyBtn = document.createElement('a');
         cardBuyBtn.classList.add('buttons-genre-card__buy');
         cardBuyBtn.innerText = 'BUY NFT'
+        cardBuyBtn.href = 'https://app.airnfts.com/';
+        cardBuyBtn.target = '_blank';
 
         cardButtons.append(cardPlayBtn, cardBuyBtn)
 

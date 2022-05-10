@@ -49,6 +49,10 @@
                 text-transform: uppercase;
                     &__item{
                         line-height: 19px;
+                        transition: color .3s;
+                        &:hover{
+                            color: rgb(199, 194, 194);
+                        }
                     }
             }
         }
