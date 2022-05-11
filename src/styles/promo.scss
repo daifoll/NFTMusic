@@ -13,6 +13,12 @@
         background: url('../images/promo/bg1.png') no-repeat top left;
         
     }
+    
+    @media screen and (max-width: 375px){
+        padding: 150px 0px 0px 0px; 
+    }
+
+    
         &-container{
             display: flex;
             flex-direction: column;
@@ -31,6 +37,10 @@
                         font-size: calc($promoHeaderMainText/1.1);
                         line-height: 70px;
                      }
+                    @media screen and (max-width: 375px){
+                        font-size: calc($promoHeaderMainText/1.6);
+                        line-height: normal;
+                    }
                 }
 
 
@@ -42,6 +52,11 @@
                     @media screen and (max-width: 610px){
                         font-size: calc($promoHeaderSubText/1.5);
                      }
+
+                     @media screen and (max-width: 375px){
+                        margin-top: 10px;
+                        font-size: calc($promoHeaderSubText/2);
+                    }
                 }
 
             }
@@ -80,6 +95,10 @@
                     border-radius: 50px;
                     cursor: pointer;
                     position: relative;
+                    @media screen and (max-width: 375px){
+                        padding: 5px 33px 5px 16px;
+                        font-size: calc($promoButtonsDiscover / 1.1)
+                    }
                         &::after{
                             content: '';
                             background: url('../images/promo/button-item.svg') no-repeat;
@@ -89,6 +108,10 @@
                             top: 50%;
                             transform: translateY(-50%);
                             left: 75%;
+                            
+                            @media screen and (max-width: 375px){
+                                left: 80%;
+                            }
                         }
                 }
         }

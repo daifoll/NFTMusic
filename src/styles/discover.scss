@@ -17,18 +17,26 @@
                         @media screen and (max-width: 610px){
                             font-size: calc($discoverHeaderMainText/1.1);
                          }
+
+                        @media screen and (max-width: 375px){
+                            font-size: calc($discoverHeaderMainText/1.6);
+                        }
                     }
                 }
                 .discover-genre{
                     display: flex;
                     justify-content: space-between;
                     align-items: flex-end;
+                    @media screen and (max-width: 375px){
+                        margin-top: 40px;
+                    }
+
                         &__wrapper{
                             display: flex;
                             @media screen and (max-width: 730px){
                                 flex-direction: column;
-                                
                             }
+
                         }
                         &__header-wrapper{
                             display: flex;
@@ -45,9 +53,11 @@
                 .genre-content{
                     display: flex;
                     align-items: center;
-                    @media screen and (max-width: 510px){
-                        flex-direction: column;
-                        align-items: flex-start;
+
+                    @media screen and (max-width: 375px){
+                        align-items: center;
+                        flex-direction: row;
+                        flex-wrap: wrap;
                     }
                     &__item{
                         background: transparent;
@@ -72,12 +82,9 @@
                             color: #8f32a8;
                         }
 
-                        @media screen and (max-width: 510px){
-                            font-size: $primalFontSize;
-                            &:not(:first-child){
-                                margin-top: 15px;
-                            }
-                         }
+                        @media screen and (max-width: 375px){
+                            margin-bottom: 15px;
+                        }
                         
                     }
                 }   
@@ -160,11 +167,9 @@
                         position: relative;
                         flex-wrap: wrap;
                         @media screen and (max-width: 1150px){
-                            position: absolute;
-                            top: 30%;
-                            left: 5%;
-                            
+                            margin-top: 20px;
                         }
+
                             &__play{
                                 font-size: $discoverButtonsGenrePlay;
                                 @include primalFontLight;
@@ -239,6 +244,10 @@
             }
 
             @keyframes discoverCardHide{
+                from{
+                    opacity: 1;
+                }
+
                 to {
                     opacity: 0;
                 }
