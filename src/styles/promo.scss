@@ -40,6 +40,10 @@
                         font-size: calc($promoHeaderMainText/1.6);
                         line-height: normal;
                     }
+
+                    @media screen and (max-width: 360px){
+                        font-size: calc($promoHeaderMainText/1.8);
+                    }
                 }
 
 
@@ -54,7 +58,12 @@
 
                      @media screen and (max-width: 414px){
                         margin-top: 10px;
+                        line-height: normal;
                         font-size: calc($promoHeaderSubText/2);
+                    }
+
+                    @media screen and (max-width: 360px){
+                        font-size: calc($promoHeaderSubText/2.3);
                     }
                 }
 

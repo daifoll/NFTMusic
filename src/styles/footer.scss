@@ -1,5 +1,9 @@
 .footer{
     padding: 96px 0px 73px 0px;
+
+    @media screen and (device-width: 360px){
+        padding: 0px 0px 50px 0px;
+    }
         &-container{
             display: flex;
             flex-direction: column;
@@ -16,6 +20,9 @@
                 font-size: $footerHeaderMainText;
                 font-style: normal;
                 line-height: 56px;
+                @media screen and (max-width: 360px){
+                    font-size: calc($footerHeaderMainText - 2px);
+                }
             }
         }
 

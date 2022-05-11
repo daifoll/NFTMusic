@@ -21,6 +21,10 @@
                         @media screen and (max-width: 414px){
                             font-size: calc($discoverHeaderMainText/1.6);
                         }
+
+                        @media screen and (max-width: 360px){
+                            font-size: calc($discoverHeaderMainText/1.8);
+                        }
                     }
                 }
                 .discover-genre{
@@ -178,7 +182,7 @@
                                 background: transparent;
                                 color: $primalColor;
                                 border: 1px solid $discoverCardButtonsBorderColor;
-                                padding: 11px 50px 11px 22px;
+                                padding: 8px 50px 8px 22px;
                                 border-radius: 55px;
                                 position: relative;
                                 cursor: pointer;
