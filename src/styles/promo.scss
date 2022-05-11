@@ -13,8 +13,7 @@
         background: url('../images/promo/bg1.png') no-repeat top left;
         
     }
-    
-    @media screen and (max-width: 375px){
+    @media screen and (max-width: 414px){
         padding: 150px 0px 0px 0px; 
     }
 
@@ -37,7 +36,7 @@
                         font-size: calc($promoHeaderMainText/1.1);
                         line-height: 70px;
                      }
-                    @media screen and (max-width: 375px){
+                    @media screen and (max-width: 414px){
                         font-size: calc($promoHeaderMainText/1.6);
                         line-height: normal;
                     }
@@ -53,7 +52,7 @@
                         font-size: calc($promoHeaderSubText/1.5);
                      }
 
-                     @media screen and (max-width: 375px){
+                     @media screen and (max-width: 414px){
                         margin-top: 10px;
                         font-size: calc($promoHeaderSubText/2);
                     }
@@ -95,7 +94,7 @@
                     border-radius: 50px;
                     cursor: pointer;
                     position: relative;
-                    @media screen and (max-width: 375px){
+                    @media screen and (max-width: 414px){
                         padding: 5px 33px 5px 16px;
                         font-size: calc($promoButtonsDiscover / 1.1)
                     }
@@ -109,7 +108,7 @@
                             transform: translateY(-50%);
                             left: 75%;
                             
-                            @media screen and (max-width: 375px){
+                            @media screen and (max-width: 414px){
                                 left: 80%;
                             }
                         }

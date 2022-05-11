@@ -18,7 +18,7 @@
                             font-size: calc($discoverHeaderMainText/1.1);
                          }
 
-                        @media screen and (max-width: 375px){
+                        @media screen and (max-width: 414px){
                             font-size: calc($discoverHeaderMainText/1.6);
                         }
                     }
@@ -27,7 +27,7 @@
                     display: flex;
                     justify-content: space-between;
                     align-items: flex-end;
-                    @media screen and (max-width: 375px){
+                    @media screen and (max-width: 414px){
                         margin-top: 40px;
                     }
 
@@ -53,11 +53,11 @@
                 .genre-content{
                     display: flex;
                     align-items: center;
+                    flex-wrap: wrap;
 
-                    @media screen and (max-width: 375px){
+                    @media screen and (max-width: 414px){
                         align-items: center;
                         flex-direction: row;
-                        flex-wrap: wrap;
                     }
                     &__item{
                         background: transparent;
@@ -67,6 +67,7 @@
                         border-radius: 50px;
                         cursor: pointer;
                         transition: color 0.2s;
+                        margin-bottom: 15px;
                         @media screen and (max-width: 610px){
                            font-size: 13px;
                         }
@@ -80,10 +81,6 @@
                         }
                         &:hover{
                             color: #8f32a8;
-                        }
-
-                        @media screen and (max-width: 375px){
-                            margin-bottom: 15px;
                         }
                         
                     }
@@ -106,6 +103,11 @@
 
                 @media screen and (max-width: 1150px){
                     grid-template-columns: 100%;
+                }
+
+                @media screen and (max-width: 414px){
+                    margin-top: 50px;
+                    grid-row-gap: 50px;
                 }
 
             .discover-card{
