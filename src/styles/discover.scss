@@ -130,6 +130,9 @@
                     padding-bottom: 0;
                 }
 
+                @media screen and (max-width: 412px){
+                    padding-bottom: 40px;
+                }
                 @media screen and (max-width: 280px){
                     display: flex;
                     flex-direction: column;
@@ -153,7 +156,9 @@
                            max-width: 40%;
                            left: 57%;
                         }
-
+                        @media screen and (max-width: 412px){
+                            top: -30%;
+                        }
                         @media screen and (max-width: 540px){
                             max-width: 30%;
                             left: 67%;
