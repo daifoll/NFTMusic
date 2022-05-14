@@ -1,5 +1,8 @@
 .discover{
     padding: 151px 0px 110px 0px;
+        @media screen and (max-width: 820px){
+            padding-bottom: 55px;
+        }
         &-container{
             display: flex;
             flex-direction: column;
@@ -31,7 +34,7 @@
                     display: flex;
                     justify-content: space-between;
                     align-items: flex-end;
-                    @media screen and (max-width: 414px){
+                    @media screen and (max-width: 820px){
                         margin-top: 40px;
                     }
 
@@ -119,7 +122,9 @@
                 border: 1px solid $discoverCardBorderColor;
                 padding-bottom: 33px;
                 position: relative;
-                
+                @media screen and (max-width: 820px){
+                    padding-bottom: 0;
+                }
                     &__img-wrapper{
                         width: 100%;
                     }
@@ -152,6 +157,7 @@
                             right: 0;
                             left: 5%;
                         }
+
                             &__item{
                                 line-height: 29px;
                                 @include primalFontSemibold;
@@ -175,6 +181,13 @@
                         @media screen and (max-width: 1150px){
                             margin-top: 20px;
                         }
+
+                        @media screen and (max-width: 820px){
+                            position: absolute;
+                            top: 50%;
+                        }
+
+                        
 
                             &__play{
                                 font-size: $discoverButtonsGenrePlay;

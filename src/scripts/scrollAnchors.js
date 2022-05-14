@@ -7,7 +7,7 @@ import { ScrollToSmooth } from './scrolltosmooth.esm';
 let smoothScroll = new ScrollToSmooth('a', {
     // options here
     duration: 400,
-    offset: '-110',
+    offset: '-1',
 
 });
 
