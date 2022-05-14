@@ -18,7 +18,7 @@
     }
 
     @media screen and (max-width: 414px){
-        padding: 150px 0px 0px 0px; 
+        padding: 150px 0px 20px 0px; 
     }
 
     
@@ -48,6 +48,10 @@
                     @media screen and (max-width: 360px){
                         font-size: calc($promoHeaderMainText/1.8);
                     }
+
+                    @media screen and (max-width: 280px){
+                        font-size: calc($promoHeaderMainText/2.5);
+                    }
                 }
 
 
@@ -60,7 +64,7 @@
                         font-size: calc($promoHeaderSubText/1.5);
                      }
 
-                     @media screen and (max-width: 414px){
+                    @media screen and (max-width: 414px){
                         margin-top: 10px;
                         line-height: normal;
                         font-size: calc($promoHeaderSubText/2);
@@ -68,6 +72,10 @@
 
                     @media screen and (max-width: 360px){
                         font-size: calc($promoHeaderSubText/2.3);
+                    }
+
+                    @media screen and (max-width: 280px){
+                        font-size: calc($promoHeaderSubText/3);
                     }
                 }
 
@@ -84,6 +92,10 @@
                 @include primalFontExtraLight;
                 line-height: 160%;
             }
+
+            @media screen and (max-width: 280px){
+                font-size: calc($primalFontSize/1.2);
+            }
         }
 
         &-buttons{
@@ -93,6 +105,9 @@
                     flex-basis: 350px;
                     display: flex;
                     justify-content: space-between;
+                    @media screen and (max-width: 280px) {
+                        flex-direction: column;
+                    }
                 }
 
                 &__discover{
@@ -110,6 +125,10 @@
                     @media screen and (max-width: 414px){
                         padding: 5px 33px 5px 16px;
                         font-size: calc($promoButtonsDiscover / 1.1)
+                    }
+
+                    @media screen and (max-width: 280px) {
+                        margin-top: 10px;
                     }
                         &::after{
                             content: '';

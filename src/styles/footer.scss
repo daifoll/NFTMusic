@@ -98,6 +98,10 @@
                     @media screen and (max-width: 885px){
                         color:darkmagenta;
                     }
+
+                    @media screen and (max-width: 280px){
+                        margin: 40px 0 0 0;
+                    }
                         &::after{
                             content: '';
                             background: url('../images/footer/top-button-arrow.svg') no-repeat center;
@@ -110,6 +114,11 @@
                             
                             @media screen and (max-width: 885px){
                                 left: 105%;
+                            }
+
+                            @media screen and (max-width: 280px){
+                                display: none;
+                                content: none;
                             }
                         }
                 }
