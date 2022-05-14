@@ -2,73 +2,73 @@ const content = document.querySelector('.genre-content');
 const DATA_SONGS = [
     {
         name: 'Heart & Sol',
-        image: `../images/discover/heart & sol.png`,
+        image: `heart & sol.png`,
         genre: 'rock'
     },
 
     {
         name: 'Witch',
-        image: `../images/discover/witch.png`,
+        image: `witch.png`,
         genre: 'k-pop',
     },
 
     {
         name: 'Eliminate',
-        image: `../images/discover/eliminate.png`,
+        image: `eliminate.png`,
         genre: 'pop',
     },
 
     {
         name: 'Surgeon',
-        image: `../images/discover/surgeon.png`,
+        image: `surgeon.png`,
         genre: 'k-pop',
     },
 
     {
         name: 'Wine Feel',
-        image: `../images/discover/wine feel.png`,
+        image: `wine feel.png`,
         genre: 'jazz',
     },
 
     {
         name: 'Unfortunate',
-        image: `../images/discover/unfortunate.png`,
+        image: `unfortunate.png`,
         genre: 'jazz',
     },
 
     {
         name: 'LiL BIG',
-        image: `../images/discover/lil big.png`,
+        image: `lil big.png`,
         genre: 'pop',
     },
 
     {
         name: 'Intensify',
-        image: `../images/discover/intensify.png`,
+        image: `intensify.png`,
         genre: 'pop',
     },
 
     {
         name: 'Fresh Flesh',
-        image: `../images/discover/fresh flesh.png`,
+        image: `fresh flesh.png`,
         genre: 'rock',
     },
 
     {
         name: 'Finally Death',
-        image: `../images/discover/finally death.png`,
+        image: `finally death.png`,
         genre: 'funk',
     },
 
     {
         name: 'Fate',
-        image: `../images/discover/fate.png`,
+        image: `fate.png`,
         genre: 'pop',
     },
 
     {
         name: 'Injury',
-        image: `../images/discover/injury.png`,
+        image: `injury.png`,
         genre: 'funk',
     },
 ]
@@ -118,7 +118,7 @@ function generateCards(){
         // Картинка
         let cardImage = document.createElement('img');
         cardImage.classList.add('discover-card__img');
-        cardImage.src = `${DATA_SONGS[i].image}`;
+        cardImage.src = require(`../images/discover/${DATA_SONGS[i].image}`);
 
         
         card.append(cardImage, cardHeader, cardButtons)
