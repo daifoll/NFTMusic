@@ -1,15 +1,5 @@
 .footer{
     padding: 96px 0px 73px 0px;
-    @media screen and (device-width: 820px) {
-        height: 80vh;
-        min-height: -webkit-fill-available;
-    }
-
-    @media screen and (device-width: 912px) {
-        height: 80vh;
-        min-height: -webkit-fill-available;
-    }
-    
     @media screen and (device-width: 360px){
         padding: 0px 0px 50px 0px;
     }

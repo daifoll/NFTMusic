@@ -134,7 +134,7 @@
                 @media screen and (max-width: 412px){
                     padding-bottom: 40px;
                 }
-                @media screen and (max-width: 280px){
+                @media screen and (max-width: 360px){
                     display: flex;
                     flex-direction: column;
                     align-items: center;
@@ -157,15 +157,13 @@
                            max-width: 30%;
                            left: 65%;
                         }
-                        @media screen and (max-width: 412px){
-                            top: -30%;
-                        }
                         @media screen and (max-width: 540px){
                             max-width: 30%;
                             left: 67%;
+                            top: -40%;
                         }
 
-                        @media screen and (max-width: 280px){
+                        @media screen and (max-width: 360px){
                             top: -15%;
                             left: 0;
                         }
@@ -185,7 +183,7 @@
                             left: 5%;
                         }
 
-                        @media screen and (max-width: 280px){
+                        @media screen and (max-width: 360px){
                             position: static;
                         }
 
@@ -216,7 +214,7 @@
                         }
 
 
-                        @media screen and (max-width: 280px){
+                        @media screen and (max-width: 360px){
                             position: static;
                             display: flex;
                             flex-direction: column;
@@ -261,7 +259,7 @@
                                             
                                         }
 
-                                        @media screen and (max-width: 280px){
+                                        @media screen and (max-width: 360px){
                                             left: 70%;
                                         }
                                         
@@ -291,7 +289,7 @@
                                         font-size: calc($discoverButtonsGenreBuy / 1.1)  
                                     }
 
-                                    @media screen and (max-width: 280px){
+                                    @media screen and (max-width: 360px){
                                         margin: 10px 0 0 0;
                                     }
 
